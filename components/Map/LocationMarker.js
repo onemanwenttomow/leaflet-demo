@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-const { Marker, Popup, useMapEvents } = require("react-leaflet");
+import { useMapEvents } from "react-leaflet/hooks";
+import { Marker, Popup } from "react-leaflet";
 
 export default function LocationMarker() {
   const [position, setPosition] = useState(null);
